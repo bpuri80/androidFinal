@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Computer Choose:"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_computer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rock"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Turn:"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/button_rock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rock"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/button_paper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paper"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/button_scissor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scissor"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Score: "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Button
+            android:id="@+id/button_highestScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Highest Score"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
